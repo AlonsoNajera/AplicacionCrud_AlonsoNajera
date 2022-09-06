@@ -41,8 +41,11 @@ function llenartabla(){
 
         nodotextomodificar.textContent="ELIMINAR";
 
-        nodotextomodificar.addEventListener("click", () => deleteIndividual(fila
-        ))
+       
+        nodotextomodificar.addEventListener("click", (event) => {
+            console.log(event.target.parentNode.parentNode.parentNode.remove())
+        })
+
 
         celdaid.appendChild(nodotextid);
         celdanom.appendChild(nodotextonom);
@@ -70,13 +73,7 @@ tbody.appendChild(fila);
 
     }
 
-}
-
-function deleteIndividual(fila){
-    console.log(fila);
    
-    localStorage.setItem("fila", JSON.stringify('aid_info'));
 
 }
-
 
