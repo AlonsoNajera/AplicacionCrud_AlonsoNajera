@@ -43,7 +43,16 @@ function llenartabla(){
 
        
         nodotextomodificar.addEventListener("click", (event) => {
-            console.log(event.target.parentNode.parentNode.parentNode.remove())
+
+            let eliminar =event.target.parentNode.parentNode.parentNode;
+            console.log(eliminar)
+            eliminar.remove();
+            localStorage.setItem('aid_info',JSON.stringify(aid));
+    localStorage.setItem('anombreInput_info',JSON.stringify(anombreInput));
+    localStorage.setItem('aapellidoLocal_info',JSON.stringify(aapellidoLocal));
+    localStorage.setItem('aocupacionLocal_info',JSON.stringify(aocupacionLocal));
+    localStorage.setItem('asueldoLocal_info',JSON.stringify(asueldoLocal));
+           
         })
 
 

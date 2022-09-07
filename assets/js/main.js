@@ -19,6 +19,7 @@ var aid=[],
  var elementobotonregistrar=document.querySelector('#btnRegistrar');
 
  elementobotonregistrar.addEventListener('click',registrar);
+ 
 const cid = document.getElementById("id");
 const cnom = document.getElementById("nombreInput");
 const cape = document.getElementById("apellidoLocal");
